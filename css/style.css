@@ -139,6 +139,7 @@ main {
   font-family: var(--ff-outfit);
   line-height: 1.2;
   width: 288px;
+  color: var(--slate-900);
 }
 
 .card-paragraph {
