@@ -1,3 +1,6 @@
+/*******************/
+/**** CSS RESET ****/
+/*******************/
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -82,6 +85,25 @@ h6 {
   color: hsl(228, 45%, 44%);
 }
 
+/*****************/
+/** ROOT STYLES **/
+/*****************/
+:root {
+  /* MAIN COLORS */
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+
+  /* FONTS */
+  --ff-outfit: "Outfit", sans-serif;
+
+  --fw-outfit-400: 400;
+  --fw-outfit-700: 700;
+  /* font-size paragraph: 15px => 0.938rem */
+  --fs-outfit: 0.938rem;
+}
+
 /****************/
 /* MAIN STYLING */
 /****************/
@@ -89,10 +111,9 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightblue;
-  height: 1000px;
+  background-color: var(--slate-300);
+  height: 100vh;
 }
-
 
 .card {
   display: flex;
@@ -102,12 +123,31 @@ main {
   justify-content: center;
   text-align: center;
   background-color:#fff;
-  padding: 16px;
+  padding: 1rem;
   border-radius: 20px;
+
 }
 
 .card-qr {
   border-radius: 10px;
   margin-bottom: 20px;
-  
+  width: 288px;
+}
+
+.card-heading {
+  margin-bottom: 0.8rem;
+  font-family: var(--ff-outfit);
+  line-height: 1.2;
+  width: 288px;
+}
+
+.card-paragraph {
+  display: flex;
+  margin: auto;
+  width: 17.5rem;
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-outfit-400);
+  margin-bottom: 1.1rem;
+  color: var(--slate-500);
+  align-items: center;
 }
